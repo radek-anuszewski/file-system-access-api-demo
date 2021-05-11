@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File System Access API Demo</title>
+  <script type="module" src="old.mjs"></script>
+  <script type="module" src="new.mjs"></script>
+</head>
+<body style="padding: 20px">
+<label for="file-editor">File editor:</label>
+<br>
+<textarea id="file-editor" cols="30" rows="20"></textarea>
+<br>
+<span id="file-name"></span>
+<br>
+<div>
+  <h2>Old way</h2>
+  <label for="file">Load file old way: </label>
+  <br>
+  <input type="file" id="file" accept="text/plain">
+  <br>
+  <button id="save">
+    Save file
+  </button>
+  <br>
+</div>
+<div>
+  <h2>New way</h2>
+  <button id="load-file-new-way">
+    Load file new way
+  </button>
+  <br>
+  <button id="save-to-current">
+    Save changes to current file
+  </button>
+  <br>
+  <button id="save-to-new">
+    Save changes to new file
+  </button>
+</div>
+</body>
+</html>
